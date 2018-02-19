@@ -4,6 +4,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def angular
+    @angular_portfolio_items = Portfolio.angular
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
@@ -26,7 +30,7 @@ class PortfoliosController < ApplicationController
 
   def update
     @portfolio_item = Portfolio.find(params[:id])
-    
+
     respond_to do |format|
       if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
         format.html { redirect_to portfolios_path, notice: 'The record was successfully updated.' }
@@ -35,7 +39,7 @@ class PortfoliosController < ApplicationController
       end
     end
   end
-  
+
   def show
     @portfolio_item = Portfolio.find(params[:id])
   end
@@ -43,7 +47,7 @@ class PortfoliosController < ApplicationController
   def destroy
     # Perform the lookup
     @portfolio_item = Portfolio.find(params[:id])
-    
+
     # Destroy/delete the record
     @portfolio_item.destroy
 
@@ -51,7 +55,7 @@ class PortfoliosController < ApplicationController
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
-  
+
   end
 
 end
