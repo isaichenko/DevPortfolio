@@ -20,14 +20,12 @@
 
           <%= render "shared/application_nav" %>
 
-          <%= login_helper %>
-
           <%= yield %>
-          <hr>
-          <div align="center"><%= copyright_generator %></div>
+
+          <%= render "shared/application_footer" %>
 
           <%= source_helper("application") %>
-
+          
         </div>
       </div>
     </div>
