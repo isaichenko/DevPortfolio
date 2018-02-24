@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -54,7 +54,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.4', '>= 4.4.1'
 
 gem 'bootstrap', '~> 4.0.0'
-gem 'jquery-rails'
+
 
 gem 'aiver_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 1.8', '>= 1.8.1'
