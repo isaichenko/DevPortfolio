@@ -20,4 +20,8 @@
 .byebug_history
 
 # I don't want to show my secrets
+<<<<<<< HEAD
 /config/secrets.yml
+=======
+/config/secretst.yml
+>>>>>>> 16394cafe07a27cc48b28b5d2ea9ac7e26d0b977
