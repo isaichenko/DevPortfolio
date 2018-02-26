@@ -57,10 +57,6 @@ gem 'bootstrap', '~> 4.0.0'
 
 
 gem 'aiver_view_tool', '~> 0.1.0'
-<<<<<<< HEAD
 gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
-=======
-gem 'petergate', '~> 1.8', '>= 1.8.1'
->>>>>>> 16394cafe07a27cc48b28b5d2ea9ac7e26d0b977
