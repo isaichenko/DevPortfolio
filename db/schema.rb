@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180224164354) do
+ActiveRecord::Schema.define(version: 20180227121920) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blogs", id: :serial, force: :cascade do |t|
+  create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.datetime "created_at", null: false
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20180224164354) do
     t.index ["topic_id"], name: "index_blogs_on_topic_id"
   end
 
-  create_table "friendly_id_slugs", id: :serial, force: :cascade do |t|
+  create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
     t.string "sluggable_type", limit: 50
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20180224164354) do
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
   end
 
-  create_table "portfolios", id: :serial, force: :cascade do |t|
+  create_table "portfolios", force: :cascade do |t|
     t.string "title"
     t.string "subtitle"
     t.text "body"
@@ -47,9 +47,10 @@ ActiveRecord::Schema.define(version: 20180224164354) do
     t.text "thumb_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "position"
   end
 
-  create_table "skills", id: :serial, force: :cascade do |t|
+  create_table "skills", force: :cascade do |t|
     t.string "title"
     t.integer "percent_utilized"
     t.datetime "created_at", null: false
@@ -57,7 +58,7 @@ ActiveRecord::Schema.define(version: 20180224164354) do
     t.text "badge"
   end
 
-  create_table "technologies", id: :serial, force: :cascade do |t|
+  create_table "technologies", force: :cascade do |t|
     t.string "name"
     t.bigint "portfolio_id"
     t.datetime "created_at", null: false
@@ -65,13 +66,13 @@ ActiveRecord::Schema.define(version: 20180224164354) do
     t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id"
   end
 
-  create_table "topics", id: :serial, force: :cascade do |t|
+  create_table "topics", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", id: :serial, force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name"

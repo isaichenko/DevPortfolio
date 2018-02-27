@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "jquery-ui";
 
 :root {
   --jumbotron-padding-y: 3rem;
@@ -38,8 +39,8 @@ footer p {
   margin-bottom: .25rem;
 }
 
-.box-shadow { 
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 /* Custom styles */
