@@ -2,6 +2,13 @@
 	
 	<h1>Topics</h1>
 
+	<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><%= link_to "Home", root_path %></li>
+      <li class="breadcrumb-item active" aria-current="page">Topics</li>
+    </ol>
+  </nav>
+
   <%= render @topics %>
   
 </div>
