@@ -1,16 +1,14 @@
 <div class="col-sm-8 blog-main">
+	
+	<h1>Topics</h1>
 
 	<nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><%= link_to "Home", root_path %></li>
-      <li class="breadcrumb-item active" aria-current="page">All Blogs</li>
+      <li class="breadcrumb-item active" aria-current="page">Topics</li>
     </ol>
   </nav>
 
-  <%= paginate @blogs %>
-
-  <%= render @blogs %>
+  <%= render @topics %>
   
-  <%= paginate @blogs %>
-
 </div>
