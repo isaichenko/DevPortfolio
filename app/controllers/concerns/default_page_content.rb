@@ -6,7 +6,7 @@ module DefaultPageContent
   end
 
   def set_page_defaults
-    @page_title = "Devcamp Portfolio | My Portfolio Website"
-    @seo_keywords = "Jordan Hudgens portfolio"
+    @page_title = "Eugene Isaichenko | My Portfolio Website"
+    @seo_keywords = "Eugene Isaichenko portfolio"
   end
 end
