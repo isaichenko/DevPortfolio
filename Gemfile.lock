@@ -107,13 +107,13 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    date (3.3.3)
     devise (4.9.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    digest (3.1.1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.8.1)
@@ -142,7 +142,6 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    io-wait (0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -185,42 +184,38 @@ GEM
     mime-types-data (3.2023.0218.1)
     mini_magick (4.12.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.6.1)
-    minitest (5.15.0)
+    mini_portile2 (2.8.2)
+    minitest (5.18.1)
     multipart-post (2.3.0)
     naught (1.1.0)
-    net-imap (0.2.2)
-      digest
+    net-imap (0.3.6)
+      date
       net-protocol
-      strscan
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.1.2)
-      io-wait
+    net-protocol (0.2.1)
       timeout
     net-scp (4.0.0)
       net-ssh (>= 2.6.5, < 8.0.0)
-    net-smtp (0.3.0)
-      digest
+    net-smtp (0.3.3)
       net-protocol
-      timeout
-    net-ssh (6.1.0)
+    net-ssh (7.1.0)
     nio4r (2.5.9)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
+    nokogiri (1.15.3)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     petergate (1.9.1)
       activerecord (> 4.0.0)
     pg (0.21.0)
     popper_js (1.16.1)
-    pry (0.13.1)
+    pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    pry-byebug (3.9.0)
+    pry-byebug (3.10.1)
       byebug (~> 11.0)
-      pry (~> 0.13.0)
-    public_suffix (4.0.7)
+      pry (>= 0.13, < 0.15)
+    public_suffix (5.0.3)
     puma (3.12.6)
     racc (1.7.1)
     rack (2.2.7)
@@ -242,8 +237,9 @@ GEM
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.5.0)
-      loofah (~> 2.19, >= 2.19.1)
+    rails-html-sanitizer (1.6.0)
+      loofah (~> 2.21)
+      nokogiri (~> 1.14)
     railties (5.1.7)
       actionpack (= 5.1.7)
       activesupport (= 5.1.7)
@@ -289,7 +285,6 @@ GEM
     sshkit-sudo (0.1.0)
       sshkit (~> 1.8)
     ssrf_filter (1.0.8)
-    strscan (3.0.6)
     thor (1.2.2)
     thread_safe (0.3.6)
     tilt (2.2.0)
@@ -354,6 +349,7 @@ DEPENDENCIES
   kaminari (~> 1.1, >= 1.1.1)
   listen (>= 3.0.5, < 3.2)
   mini_magick (~> 4.8)
+  net-ssh
   petergate (~> 1.8, >= 1.8.1)
   pg (~> 0.18)
   pry-byebug
@@ -372,7 +368,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.5.1p57
+   ruby 2.7.5p203
 
 BUNDLED WITH
    1.17.3

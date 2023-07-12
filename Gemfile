@@ -31,7 +31,9 @@ group :development do
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
+  #gem 'capistrano3-puma', '~> 5.2'
   gem 'sshkit-sudo'
+  gem 'net-ssh'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -54,4 +56,4 @@ gem 'redis', '~> 3.3'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 
-ruby "2.5.1"
+ruby "2.7.5"
