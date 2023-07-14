@@ -7,6 +7,8 @@ set :application, "portfolio"
 set :repo_url, "git@github.com:isaichenko/DevPortfolio.git"
 set :branch, 'master'
 
+set :default_env, { rvm_bin_path: '~/.rvm/bin' }
+
 append :linked_files, ".env"
 
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", ".bundle"

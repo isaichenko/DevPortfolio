@@ -185,9 +185,10 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
-    listen (3.0.8)
+    listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -205,6 +206,7 @@ GEM
     mime-types-data (3.2023.0218.1)
     mini_magick (4.12.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.2)
     minitest (5.18.1)
     multipart-post (2.3.0)
     naught (1.1.0)
@@ -221,7 +223,8 @@ GEM
       net-protocol
     net-ssh (7.1.0)
     nio4r (2.5.9)
-    nokogiri (1.15.3-x86_64-linux)
+    nokogiri (1.15.3)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     petergate (1.9.1)
@@ -279,6 +282,7 @@ GEM
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
+    ruby_dep (1.5.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -346,7 +350,7 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   aiver_view_tool (~> 0.1.0)
@@ -392,7 +396,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 3.1.1p18
+   ruby 2.7.5p203
 
 BUNDLED WITH
-   2.3.7
+   2.1.4
