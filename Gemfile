@@ -11,7 +11,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.1"
 
 #gem 'rails', '~> 5.1.4'
-gem 'rails', '~> 6.0.0'
+#gem 'rails', '~> 6.0.0'
+gem 'rails', '~> 6.0', '>= 6.0.6.1'
 
 gem 'pg', '~> 0.18'
 #gem 'puma', '~> 3.7'
