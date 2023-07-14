@@ -101,10 +101,10 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano3-puma (3.1.1)
+    capistrano3-puma (5.2.0)
       capistrano (~> 3.7)
       capistrano-bundler
-      puma (~> 3.4)
+      puma (>= 4.0, < 6.0)
     carrierwave (1.3.3)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
@@ -234,7 +234,8 @@ GEM
       pry (>= 0.13, < 0.15)
     psych (3.3.4)
     public_suffix (5.0.3)
-    puma (3.12.6)
+    puma (5.6.6)
+      nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.7)
     rack-test (2.1.0)
@@ -353,7 +354,7 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rails
   capistrano-rvm
-  capistrano3-puma
+  capistrano3-puma (~> 5.2)
   carrierwave (~> 1.2, >= 1.2.2)
   carrierwave-aws (~> 1.3)
   cocoon (~> 1.2, >= 1.2.11)
@@ -370,12 +371,11 @@ DEPENDENCIES
   kaminari (~> 1.1, >= 1.1.1)
   listen (>= 3.0.5, < 3.2)
   mini_magick (~> 4.8)
-  net-ssh
   petergate (~> 1.8, >= 1.8.1)
   pg (~> 0.18)
   pry-byebug
   psych (< 4)
-  puma (~> 3.7)
+  puma
   rails (~> 6.0.0)
   redcarpet (~> 3.4)
   redis (~> 3.3)
@@ -389,5 +389,8 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
 
+RUBY VERSION
+   ruby 3.1.1p18
+
 BUNDLED WITH
-   1.17.3
+   2.4.16
