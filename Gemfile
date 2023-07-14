@@ -14,7 +14,8 @@ ruby "3.1.1"
 #gem 'rails', '~> 6.0.0'
 gem 'rails', '~> 6.0', '>= 6.0.6.1'
 
-gem 'pg', '~> 0.18'
+#gem 'pg', '~> 0.18'
+gem "pg", "~> 1.1"
 #gem 'puma', '~> 3.7'
 gem 'puma'
 gem 'sass-rails', '~> 5.0'
