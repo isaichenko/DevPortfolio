@@ -8,6 +8,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+ruby "3.1.1"
+
 #gem 'rails', '~> 5.1.4'
 gem 'rails', '~> 6.0.0'
 
@@ -61,5 +63,3 @@ gem 'redis', '~> 3.3'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'psych', '< 4'
-
-ruby "3.1.1"
