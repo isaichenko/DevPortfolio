@@ -7,11 +7,11 @@ set :application, "portfolio"
 set :repo_url, "git@github.com:isaichenko/DevPortfolio.git"
 set :branch, 'master'
 
-set :default_env, { rvm_bin_path: '~/.rvm/bin' }
+#set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
-append :linked_files, ".env"
-
+append :linked_files, %w{.env config/secrets.yml}
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", ".bundle"
+
 set :rails_env, 'production'
 
 # If using Digital Ocean's Ruby on Rails Marketplace framework, your username is 'rails'
